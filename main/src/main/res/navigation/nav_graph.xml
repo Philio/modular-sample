@@ -1,0 +1,17 @@
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:startDestination="@id/feature1Fragment">
+
+    <fragment
+        android:id="@+id/feature1Fragment"
+        android:name="com.example.feature1.Feature1Fragment"
+        android:label="Feature1Fragment" />
+    <fragment
+        android:id="@+id/feature2Fragment"
+        android:name="com.example.feature2.Feature2Fragment"
+        android:label="Feature2Fragment" />
+    <fragment
+        android:id="@+id/feature3Fragment"
+        android:name="com.example.feature3.Feature3Fragment"
+        android:label="Feature3Fragment" />
+</navigation>
