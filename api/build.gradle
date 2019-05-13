@@ -1,0 +1,6 @@
+apply from: '../library.gradle'
+
+dependencies {
+    api "io.reactivex.rxjava2:rxjava:2.2.8"
+    api "io.reactivex.rxjava2:rxkotlin:2.3.0"
+}

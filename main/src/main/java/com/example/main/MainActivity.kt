@@ -12,6 +12,7 @@ class MainActivity : DaggerAppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Setup Toolbar and Nav View with the nav controller
         val navController = Navigation.findNavController(this, R.id.nav_host_fragment)
         toolbar.setupWithNavController(navController, drawer)
         nav_view.setupWithNavController(navController)
