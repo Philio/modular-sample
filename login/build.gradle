@@ -1,6 +1,9 @@
 apply from: '../library.gradle'
 
 android {
+    defaultConfig {
+        testInstrumentationRunner "com.example.login.test.TestAppCucumberAndroidJUnitRunner"
+    }
     dataBinding {
         enabled = true
     }

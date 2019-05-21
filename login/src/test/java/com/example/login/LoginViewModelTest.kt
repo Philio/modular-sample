@@ -103,7 +103,7 @@ internal class LoginViewModelTest {
     }
 
     @Test
-    fun `Given user credentials are valid When login button clicked Then notify observers`() {
+    fun `Given user credentials are valid When login button clicked Then notify success observers`() {
         val user = User("Test")
         every { apiRepository.login(any(), any()) } returns Observable.just(user)
         val username = "username"
@@ -117,7 +117,7 @@ internal class LoginViewModelTest {
     }
 
     @Test
-    fun `Given user credentials are invalid When login button clicked Then notify observers`() {
+    fun `Given user credentials are invalid When login button clicked Then notify error observers`() {
         val error = Throwable("Bad times")
         every { apiRepository.login(any(), any()) } returns Observable.error(error)
         val username = "badusername"

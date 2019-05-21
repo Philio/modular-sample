@@ -1,0 +1,7 @@
+apply from: "$rootProject.projectDir/library.gradle"
+
+android {
+    defaultConfig {
+        testInstrumentationRunner "cucumber.api.android.CucumberAndroidJUnitRunner"
+    }
+}
