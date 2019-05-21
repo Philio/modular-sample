@@ -1,4 +1,4 @@
-# Quick sample of a modular app using Dagger
+# Sample of a modular app using Dagger
 
 ## Modules
 
@@ -18,3 +18,33 @@
 ### FeatureX
 
 * A fragment included in the main activity
+
+### Login
+
+* A simple tested example of a login screen that shows a snackbar indicating the result
+* Unit tests (TDD) with JUnit and MockK
+* UI tests (BDD) with Cucumber Android and MockK
+
+### API
+
+* A fake API that returns successful response with `test`/`hello123` credentials
+
+### Test/Integration
+
+* An empty test suite for integration testing using BDD (Cucumber Android) with a single dummy test
+
+## Tests
+
+### Running login tests
+
+#### Unit tests
+
+`./gradlew :login:test`
+
+#### UI tests
+
+`./gradlew :login:connectedAndroidTest`
+
+### Running integration tests
+
+`./gradlew :test:integration:connectedAndroidTest`
